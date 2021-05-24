@@ -12,7 +12,7 @@ request.send();
 request.onload  = function()
 {
     var data =JSON.parse(this.response);
-    console.log("WEATHER REPORT of given latitude and longitude : "+data.weather[0].description);
+    console.log("WEATHER REPORT of latitude "+lat+" and longitude "+lng +" : "+data.weather[0].description);
   
     
 }
